@@ -1,8 +1,10 @@
 # FCC: Front End Libraries Projects - Build a Markdown Previewer
 
-##Built with React and Redux 
+A live Markdown previewer. Fun fact: This README was built and previewed with this project.
 
-##Test Cases passed : 12/12
+## Built with React and Redux 
+
+## Test Cases passed : 12/12
 
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/GrZVVO.
 
@@ -20,4 +22,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
-
