@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { connect } from 'react-redux';
+import MarkDownBox from './components /MarkDownBox';
+import Preview from './components /Preview';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  render(){
+    return(
+      <div className="App">
+        <MarkDownBox />
+        <Preview />
+      </div>
+       
+    )
+  }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return{
+    message: state.text
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return{
+    onChangeText: () => dispatch({type: 'onChangeText'} ),
+    justChange: () => dispatch({type: 'justChange', new: 'new'})
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(App);

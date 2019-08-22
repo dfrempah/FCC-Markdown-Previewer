@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  background-color: #b3bab3;
 }
 
 .App-logo {
@@ -22,12 +26,39 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.markedContainer{
+  width: 30%;
+  height: 500px;
+  border: 2px solid teal;
+  margin-top: 5%;
 }
+.markedHeader{
+  text-align: center;
+  background: teal;
+  padding: 5%;
+  color: white;
+}
+.previewContainer{
+  width: 70%;
+  border: 2px solid teal;
+  background-color: #d8dba0;
+  text-align: left;
+  font-family: 'Anonymous Pro', sans-serif;
+  font-size: 39;
+  padding: 5px;
+}
+.previewHeader{
+  color: white;
+  text-align: center;
+  background: teal;
+  padding: 5%;
+}
+textarea{
+  width: 99%;
+  height: 100%;
+  background: #e1f5e3;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  padding: 5px;
+}
+
