@@ -4,7 +4,7 @@ A live Markdown previewer. Fun fact: This README was built and previewed with th
 
 ## Built with React and Redux 
 
-## Test Cases passed : 12/12
+## Test Cases passed : 7/7
 
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/GrZVVO.
 
