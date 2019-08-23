@@ -13,7 +13,7 @@ class Preview  extends React.Component{
             <div className="previewContainer">
                 <div className="previewHeader" ><h1>Preview</h1></div>
                
-            <div dangerouslySetInnerHTML={{__html: marked(this.props.message, {renderer: renderer})}}></div>
+            <div  id="preview" dangerouslySetInnerHTML={{__html: marked(this.props.message, {renderer: renderer})}}></div>
             </div>
         )
     }

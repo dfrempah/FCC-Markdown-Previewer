@@ -6,7 +6,7 @@ class MarkDownBox extends React.Component{
         return(
             <div className="markedContainer">
                 <div className="markedHeader" ><h1>Raw Mark Down</h1></div>
-                <textarea name="markdownarea" id="markdownarea" value={this.props.message} onChange={this.props.onChangeText}></textarea>
+                <textarea name="markdownarea" id="editor" value={this.props.message} onChange={this.props.onChangeText}></textarea>
             </div>
         )
     }
